@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    transition: all .2s ease;
+}
+
+:root {
+    --boxShadow: .1rem .3rem .9rem rgba(0,0,0,0.4)
+}
+
+::selection {
+    color: #E4F0F5;
+    background-color: #428AA3;
+}
+
+html {
+    scroll-padding-top: 8rem;
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #FEFEDF;
+}
+
+section {
+    padding: 2rem 9%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    background-color: #FFF;
+    box-shadow: var(--boxShadow);
+    width: 35rem;
+    padding: 3rem 9%;
+    z-index: 1000;
+}
+
+.title {
+    color: #ff0000;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.display {
+    background-color: rgba(31, 31, 31, 0.1);
+    padding: .7rem;
+    text-align: center;
+    color: #000;
+    margin-bottom: 2rem;
+}
+
+.options {
+    background-color: rgba(155, 155, 155, 0.096);
+    padding: .7rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: .7rem;
+}
+
+.options label {
+    margin-left: .8rem;
+    text-transform: none;
+    font-weight: 300;
+}
+
+.options input[type="checkbox"] {
+    margin-right: .5rem;
+}
+
+.options .longueur{
+    margin-right: .8rem;
+    text-transform: none;
+    font-weight: 300;
+}
+
+.length {
+    width: 1.9rem;
+    height: 2rem;
+    background-color: #E4F0F5;
+    text-align: center;
+    padding: .5rem .1rem;
+    border: none;
+    border-radius: .2rem;
+    margin-left: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 1rem;
+    width: 100%;
+    text-align: center;
+    background-color: #FEFEDF;
+    font-weight: bolder;
+    color: #222;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 3rem;
+    border-radius: .3rem;
+}
+
+.btn:hover {
+    background-color: #E4F0F5;
+    transition: all .3s ease-in;
+}
+
+.footer {
+    position: absolute;
+    top: 90%;
+    left: 0; right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+.footer h1 {
+    margin-top: .8rem;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 450px) {
+    html {
+        font-size: 50%;
+    }
+    section {
+        padding: 2rem;
+    }
+    .title {
+        font-size: 1.9rem;
+    }
+    .options label {
+        font-size: 1.3rem;
+    }
+}

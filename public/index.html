@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/public/css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Password Generator</title>
+</head>
+<body>
+
+<section>
+
+    <div class="container">
+        <h3 class="title">Générateur de mot de passe</h3>
+        <p class="display">Clique sur générer</p>
+
+        <div class="options">
+            <input type="checkbox" class="caps" id="caps" checked>
+            <label for="caps">comprendre A - Z</label>
+        </div>
+
+        <div class="options">
+            <input type="checkbox" class="smalls" id="smalls" checked>
+            <label for="smalls">comprendre a - z</label>
+        </div>
+
+        <div class="options">
+            <input type="checkbox" class="nums" id="nums">
+            <label for="nums">comprendre 0 - 9</label>
+        </div>
+
+        <div class="options">
+            <input type="checkbox" class="syms" id="syms">
+            <label for="syms">comprendre symbole</label>
+        </div>
+
+        <div class="options">
+            <p class="longueur">Longueur de mot de passe</p>
+            <input type="text" value="8" class="length">
+        </div>
+
+        <button class="btn">Créer mot de passe</button>
+
+    </div>
+
+</section>
+
+<footer class="footer">
+    <h1>Created by Gabriel Póvoa</h1>
+    <span>All rights are reserved</span>
+</footer>
+
+    <script src="/public/js/app.js"></script>
+</body>
+</html>
