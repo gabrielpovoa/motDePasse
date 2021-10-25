@@ -1,7 +1,4 @@
-<h1>Password Generator<h1>
-
-<hr>
-
+<h2>Password Generator<h2>
 <span>I decided to create this and, I haven't thought it's gonna be hard, but I stayed all morning and part of the afternoon doing this. The result is incredible. It was too vague that I needed to remake the <kbd>JavaScript</kbd> code more than two times.</span>
 
 <hr>
